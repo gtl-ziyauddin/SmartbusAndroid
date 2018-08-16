@@ -1,0 +1,160 @@
+<!-- Loco xml export: Android string resources Project: Smart Bus apps and website Release: Working copy Locale: en, English Exported by: Einar Gustafsson Exported at: Tue, 31 Jul 2018 07:18:14 +0000 -->
+
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <string name="app_name">SmartBus</string>
+    <string name="str_out_to_get_you">On our way</string>
+
+    <string name="str_your_booking_ref">Use your booking ID or email to see the location of your Smart Bus pickup</string>
+
+    <string name="str_hint_last_name">Last name</string>
+
+    <string name="str_hint_booking_number">Ticket number</string>
+
+    <string name="str_find_bus">Find my bus</string>
+
+    <string name="str_dont_have_booking">Don\'t have your ticket number?</string>
+
+    <string name="str_hint_email_address">Email address</string>
+
+    <string name="str_send_magic_link">Send magic link</string>
+
+    <string name="str_where_my_bus">Where\'s my bus?</string>
+
+    <string name="str_tours_activities">Tours &amp; activities</string>
+
+    <string name="str_allow">Allow</string>
+
+    <string name="str_dont_allow">Don\'t Allow</string>
+
+    <string name="str_pick_up_info">Pick up info</string>
+
+    <string name="str_terminal">Reykjavik Terminal</string>
+
+    <string name="str_contact_support">Contact support</string>
+
+    <string name="str_missed_pickup">Missed your pick up?</string>
+
+    <string name="str_no_pickup">No pick ups listed</string>
+
+    <string name="str_add_another_pickup">Add another pickup</string>
+
+    <string name="str_book_now">Book now</string>
+
+    <string name="str_booking_information">Booking information</string>
+
+    <string name="str_pickup_details_title">Pick up details</string>
+
+    <string name="str_bus_number">Bus plate number</string>
+
+    <string name="str_bus_status">Bus has arrived</string>
+
+    <string name="str_pick_up_info_search">Search for your accommodation</string>
+
+    <string name="str_select">Select</string>
+
+    <string name="str_look_map">Take a look at the map</string>
+
+    <string name="str_pick_up_locaiton">Pick up location</string>
+
+    <string name="str_contact_us">Contact us</string>
+
+    <string name="str_settings">Settings</string>
+
+    <string name="str_cancel">Cancel</string>
+
+    <string name="str_reykjavik_terminal">to Reykjavik Terminal</string>
+
+    <string name="str_pick_up_start">Pick up starts</string>
+
+    <string name="str_for">For</string>
+
+    <string name="str_passengers">Passengers</string>
+
+    <string name="msg_no_data_found">No data found.</string>
+
+    <string name="msg_please_enter_last_name">Please enter last name.</string>
+
+    <string name="msg_please_enter_booking_number">Please enter your ticket number</string>
+
+    <string name="msg_please_enter_email_address">Please enter email address.</string>
+
+    <string name="msg_please_enter_correct_email">Please enter correct email address.</string>
+
+    <string name="msg_no_pickup_found">No pick up found.</string>
+
+    <string name="msg_no_pickup_found_message">We couldn\'t find any pick up with that ticket number. Please verify your reservation information.</string>
+
+    <string name="msg_no_customer_name_found_message">Name on the booking didn\’t match, please check your voucher.</string>
+
+    <string name="msg_notification_title">Allow \"Smart bus\" to send you notification.</string>
+
+    <string name="msg_notification_detail">Notification may include alerts, sounds and icon badges. These can be configured in your settings.</string>
+
+    <string name="msg_location_title">Allow \"Smart bus\" to your location while using the app?</string>
+
+    <string name="msg_location_detail">Your current location will be shown on a map to help you get to your pick up location.</string>
+
+    <string name="msg_location_permission_denied">Your bus driver is not able to track you as you did not give permission to share your location</string>
+
+    <string name="msg_location">Allow App to access your location.</string>
+
+    <string name="msg_permanent_denied_phone_permission">Please enable permission from app setting so your bus driver can track you.</string>
+
+    <string name="msg_mail_sent">Link has been sent, please check your email.</string>
+
+    <string name="msg_server_error_try_again">Server error, please try again.</string>
+
+    <string name="msg_no_internet">No internet connection.</string>
+
+    <string name="msg_status_not_found">Not found</string>
+
+    <string name="msg_bus_not_assigned">Not assigned</string>
+
+    <string name="msg_bus_assigned">Assigned</string>
+
+    <string name="msg_bus_started">En route to departure place</string>
+
+    <string name="msg_bus_boarding">Boarding</string>
+
+    <string name="msg_bus_en_route">En route to destination</string>
+
+    <string name="msg_bus_finished">Arrived at destination</string>
+
+    <string name="msg_no_pickup_detail">You don\'t have any pick ups listed, find something fun to do by looking at our great options for tours and activities or try authenticating again with another booking number.</string>
+
+    <string name="msg_string2">Not started</string>
+
+    <string name="msg_string3">Label</string>
+
+    <string name="msg_string4">Next booking</string>
+
+    <string name="str_departed">Departed</string>
+
+    <string name="str_try_again">Please try again</string>
+
+    <!--later-->
+    <string name="str_at">at</string>
+    <string name="msg_no_booking_found">No booking found.</string>
+    <string name="str_chat_support">Chat support</string>
+    <string name="chat_with_us">Chat with us!</string>
+    <string name="initialize_error">Error\nYou need to add your
+        API key and App ID in SampleApplication.java
+    </string>
+
+    <!--DEEP LINKING-->
+
+    <string name="filter_view_http_smartbus">SmartBus</string>
+
+    <!--USED AS LABEL TO DEPLOY UI-->
+    <string name="str_booking_information_detail">Transport to Keflavik Airport</string>
+    <string name="str_pickup_detail">Bus top 10 to Reykjavik Terminallllllllllllllllllllllllllllllllllllllllllllllllllllll \nPickup starts 8:30AM \n For 6 passengers</string>
+    <string name="str_pick_up_top_info">The Smart bus picks up from all major hotels and designated bus stops in Reykjvik.</string>
+    <string name="str_pick_up_middle_info">Bus pick up downtown Reykjvik.</string>
+    <string name="str_pick_up_bottom_info">In the city center there are  12 designated bus stops that you can choose from. If you are located outside of the city center then we can most likely pick up from there as well. If you are in the suburbs of Reykjvik or in another township you have to take a taxi or a bus to the closest pickup point.</string>
+
+
+
+</resources>
+
+
+

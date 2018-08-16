@@ -1,0 +1,86 @@
+project.ext {
+    appcompat = "27.1.1"
+    retrofit = "2.3.0"
+    constraintLayout = "1.1.2"
+    location = "15.0.1"
+    archRoomVersion = "1.1.1"
+    firebaseCore = "16.0.1"
+    firebaseMessage = "17.1.0"
+    okHttp = "3.9.0"
+    qrCode = "3.3.0"
+    gson = "2.8.2"
+    fresco = "1.9.0"
+    intercom="5.1.0"
+
+}
+apply plugin: 'com.android.application'
+apply plugin: 'io.fabric'
+
+android {
+    compileSdkVersion 27
+    defaultConfig {
+        applicationId "com.nimius.smartbus"
+        minSdkVersion 23
+        targetSdkVersion 27
+        versionCode 1
+        versionName "1 .0"
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+    dataBinding {
+        enabled true
+    }
+    compileOptions {
+        targetCompatibility 1.8
+        sourceCompatibility 1.8
+    }
+}
+
+dependencies {
+    implementation fileTree(include: ['*.jar'], dir: 'libs')
+    testImplementation 'junit:junit:4.12'
+    androidTestImplementation 'com.android.support.test:runner:1.0.2'
+    androidTestImplementation 'com.android.support.test.espresso:espresso-core:3.0.2'
+    implementation "com.google.android.gms:play-services-maps:$project.location"
+    implementation "com.google.android.gms:play-services-location:$project.location"
+    implementation "com.android.support:design:$project.appcompat"
+    implementation "com.android.support.constraint:constraint-layout:$project.constraintLayout"
+    implementation "com.squareup.retrofit2:retrofit:$project.retrofit"
+    implementation "com.squareup.retrofit2:converter-gson:$project.retrofit"
+    implementation "com.squareup.okhttp3:logging-interceptor:$project.okHttp"
+    implementation "com.squareup.okhttp3:okhttp:$project.okHttp"
+
+    //QR CODE
+    implementation "com.google.zxing:core:$project.qrCode"
+    // GSON
+    implementation "com.google.code.gson:gson:$project.gson"
+
+    //ROOM Database
+    annotationProcessor "android.arch.lifecycle:compiler:$project.archRoomVersion"
+    annotationProcessor "android.arch.persistence.room:compiler:$project.archRoomVersion"
+    implementation "android.arch.persistence.room:runtime:$project.archRoomVersion"
+    implementation "android.arch.lifecycle:runtime:$project.archRoomVersion"
+    implementation "android.arch.lifecycle:extensions:$project.archRoomVersion"
+
+
+  //FIREBASE
+    implementation "com.google.firebase:firebase-core:$project.firebaseCore"
+    implementation "com.google.firebase:firebase-messaging:$project.firebaseMessage"
+
+
+    //FRESCO
+    implementation "com.facebook.fresco:fresco:$project.fresco"
+    implementation 'com.crashlytics.sdk.android:crashlytics:2.9.4'
+
+
+    ///INTERCOM
+    implementation "io.intercom.android:intercom-sdk-base:$project.intercom"
+    implementation "io.intercom.android:intercom-sdk-fcm:$project.intercom"
+
+}
+apply plugin: 'com.google.gms.google-services'

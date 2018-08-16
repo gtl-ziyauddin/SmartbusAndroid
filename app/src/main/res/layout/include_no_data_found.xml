@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TextView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/tv_no_data"
+    style="@style/black_16"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:layout_marginTop="@dimen/dimen_10"
+    android:text="@string/msg_no_data_found"
+    android:visibility="gone" />
+

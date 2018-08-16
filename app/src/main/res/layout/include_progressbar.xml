@@ -1,0 +1,15 @@
+<layout>
+
+    <ProgressBar xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/progressbar"
+        style="@style/Base.Widget.AppCompat.ProgressBar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:indeterminate="true"
+        android:theme="@style/CircularProgress"
+        android:visibility="gone" />
+
+</layout>
+
+

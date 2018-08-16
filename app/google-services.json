@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "288503212711",
+    "firebase_url": "https://smart-bus-f2db8.firebaseio.com",
+    "project_id": "smart-bus-f2db8",
+    "storage_bucket": "smart-bus-f2db8.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:288503212711:android:3d5ff83948cad8b4",
+        "android_client_info": {
+          "package_name": "com.nimius.smartbus"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "288503212711-uqhnafk882em8vv1d35ethifi92t1q6s.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAgCtCfIuwcagkTZXr3fS2d6f8pTAWMXNc"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

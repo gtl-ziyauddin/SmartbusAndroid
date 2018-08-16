@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout>
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/layout_progressbar_wait"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/color_semi_transparent"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+
+        <ProgressBar xmlns:android="http://schemas.android.com/apk/res/android"
+            android:id="@+id/progressbar_wait"
+            style="@style/Widget.AppCompat.ProgressBar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:theme="@style/CircularProgress"
+            android:visibility="visible" />
+
+    </LinearLayout>
+</layout>

@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@android:color/white">
+
+        <include
+            android:id="@+id/layout_toolbar"
+            layout="@layout/include_toolbar" />
+
+
+        <TextView
+            android:id="@+id/tv_title"
+            style="@style/black_16"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/brandon_text_bold"
+            android:padding="@dimen/dimen_10"
+            android:visibility="gone"
+            app:layout_constraintTop_toBottomOf="@+id/layout_toolbar"
+            tools:text="Title" />
+
+
+        <TextView
+            android:id="@+id/tv_detail"
+            style="@style/black_16"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dimen_10"
+            android:fontFamily="@font/brandon_text_regular"
+            android:padding="@dimen/dimen_10"
+            app:layout_constraintTop_toBottomOf="@+id/tv_title"
+            tools:text="Description" />
+
+        <com.facebook.drawee.view.SimpleDraweeView
+            android:id="@+id/iv_contact_us"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dimen_200"
+            app:layout_constraintBottom_toBottomOf="parent" />
+
+        <include layout="@layout/include_progress_wait" />
+
+
+        <!--CHAT LAYOUT-->
+        <RelativeLayout
+            android:id="@+id/layout_chat"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="@dimen/dimen_5"
+            android:visibility="visible"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintRight_toRightOf="parent">
+
+            <!--<Button-->
+            <!--android:id="@+id/messenger_button"-->
+            <!--android:layout_width="150dp"-->
+            <!--android:layout_height="40dp"-->
+            <!--android:layout_alignParentTop="true"-->
+            <!--android:layout_centerHorizontal="true"-->
+            <!--android:layout_marginTop="16dp"-->
+            <!--android:background="@drawable/rounded_button"-->
+            <!--android:drawableLeft="@drawable/ic_chat"-->
+            <!--android:drawablePadding="8dp"-->
+            <!--android:padding="8dp"-->
+            <!--android:visibility="gone"-->
+            <!--android:text="@string/chat_with_us"-->
+            <!--android:textColor="@android:color/white" />-->
+
+
+            <android.support.design.widget.FloatingActionButton
+                android:id="@+id/messenger_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom|end"
+                android:padding="8dp"
+                android:src="@drawable/ic_chat_intercom"
+                app:backgroundTint="@color/colorPrimaryDark"
+                app:elevation="6dp"
+                app:pressedTranslationZ="12dp" />
+
+            <TextView
+                android:id="@+id/unread_counter"
+                android:layout_width="16dp"
+                android:layout_height="16dp"
+                android:layout_alignRight="@+id/messenger_button"
+                android:layout_alignTop="@+id/messenger_button"
+                android:layout_gravity="center_vertical"
+                android:background="@drawable/rounded_badge"
+                android:gravity="center"
+                android:textColor="@android:color/white"
+                android:textSize="12sp"
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@+id/not_initialized"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="#A000"
+                android:gravity="center"
+                android:text="@string/initialize_error"
+                android:textColor="@android:color/white"
+                android:textSize="16sp"
+                android:visibility="gone" />
+
+
+        </RelativeLayout>
+
+
+    </android.support.constraint.ConstraintLayout>
+</layout>

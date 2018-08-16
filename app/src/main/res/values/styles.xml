@@ -1,0 +1,140 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+
+    <style name="AppCompatTheme" parent="@style/AppTheme">
+        <item name="windowNoTitle">true</item>
+        <item name="windowActionBar">false</item>
+    </style>
+
+
+    <style name="MyDialogTheme" parent="Theme.AppCompat.Light.Dialog.Alert">
+        <!--buttons color-->
+        <item name="colorAccent">@color/colorPrimaryDark</item>
+        <!--title datasage color-->
+        <item name="android:textColorPrimary">@android:color/background_dark</item>
+        <!--dialog background-->
+        <item name="android:windowBackground">@android:color/white</item>
+    </style>
+
+
+
+    <!--CIRCULAR PROGRESS BAR-->
+    <style name="CircularProgress" parent="Theme.AppCompat.Light">
+        <item name="colorAccent">@color/colorPrimaryDark</item>
+    </style>
+
+    <!--POP UP STYLE-->
+    <style name="MyPopUpMenu" parent="Theme.AppCompat.Light">
+        <item name="android:background">@android:color/white</item>
+        <item name="android:textColor">@android:color/black</item>
+    </style>
+
+
+    <!--TOOLBAR STYLE TEXT AND CONTROLS-->
+    <style name="ActionBarThemeOverlay" parent="ThemeOverlay.AppCompat.Light">
+        <!-- Color of Toolbar Font Color -->
+        <item name="android:textColorPrimary">@android:color/black</item>
+        <!-- Color of Toolbar Action Buttons -->
+        <item name="colorControlNormal">@android:color/white</item>
+        <!-- <item name="colorControlHighlight">@android:color/black</item> -->
+    </style>
+
+
+
+
+    <!--BLACK-->
+
+    <style name="black_16">
+        <item name="android:textColor">@android:color/black</item>
+        <item name="android:textSize">@dimen/text_size_16</item>
+    </style>
+
+
+    <style name="black_18">
+        <item name="android:textColor">@android:color/black</item>
+        <item name="android:textSize">@dimen/text_size_18</item>
+    </style>
+
+
+    <!--WHITE-->
+
+    <style name="white_16">
+        <item name="android:textColor">@android:color/white</item>
+        <item name="android:textSize">@dimen/text_size_16</item>
+    </style>
+
+    <style name="white_18">
+        <item name="android:textColor">@android:color/white</item>
+        <item name="android:textSize">@dimen/text_size_18</item>
+    </style>
+
+    <style name="white_40">
+        <item name="android:textColor">@android:color/white</item>
+        <item name="android:textSize">@dimen/text_size_40</item>
+    </style>
+
+    <!--LIGHT GREY-->
+
+    <style name="grey_light_14">
+        <item name="android:textColor">@color/color_light_grey</item>
+        <item name="android:textSize">@dimen/text_size_14</item>
+    </style>
+
+
+<!--GREY-->
+
+    <style name="grey_14">
+        <item name="android:textColor">@color/color_grey_button_text</item>
+        <item name="android:textSize">@dimen/text_size_14</item>
+    </style>
+
+
+    <style name="grey_16">
+    <item name="android:textColor">@color/color_grey_button_text</item>
+    <item name="android:textSize">@dimen/text_size_16</item>
+</style>
+
+
+    <style name="grey_18">
+        <item name="android:textColor">@color/color_grey_icon</item>
+        <item name="android:textSize">@dimen/text_size_18</item>
+    </style>
+
+    <style name="grey_40">
+        <item name="android:textColor">@color/color_grey_button_text</item>
+        <item name="android:textSize">@dimen/text_size_40</item>
+    </style>
+
+    <!--PRIMARY-->
+    <style name="primary_dark_16">
+        <item name="android:textColor">@color/colorPrimaryDark</item>
+        <item name="android:textSize">@dimen/text_size_16</item>
+    </style>
+
+    <style name="primary_dark_18">
+        <item name="android:textColor">@color/colorPrimaryDark</item>
+        <item name="android:textSize">@dimen/text_size_18</item>
+    </style>
+
+    <style name="primary_dark_20">
+        <item name="android:textColor">@color/colorPrimaryDark</item>
+        <item name="android:textSize">@dimen/text_size_20</item>
+    </style>
+
+    <style name="primary_dark_24">
+        <item name="android:textColor">@color/colorPrimaryDark</item>
+        <item name="android:textSize">@dimen/text_size_24</item>
+    </style>
+
+
+
+
+</resources>

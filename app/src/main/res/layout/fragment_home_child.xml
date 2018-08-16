@@ -1,0 +1,332 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+
+    <data>
+
+        <variable
+            name="HomeChildFragment"
+            type="com.nimius.smartbus.views.ui.fragments.HomeChildFragment" />
+
+    </data>
+
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@android:color/white">
+
+
+        <android.support.constraint.ConstraintLayout
+            android:id="@+id/constraint_top"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dimen_20"
+            android:paddingBottom="@dimen/dimen_5"
+            android:paddingEnd="@dimen/dimen_15"
+            android:paddingStart="@dimen/dimen_20"
+            app:layout_constraintBottom_toTopOf="@+id/map"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_weight="5">
+
+            <TextView
+                android:id="@+id/tv_booking_title"
+                style="@style/grey_light_14"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/brandon_text_regular"
+                android:text="@string/str_booking_information" />
+
+
+            <TextView
+                android:id="@+id/tv_customer_name"
+                style="@style/primary_dark_16"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/dimen_20"
+                android:fontFamily="@font/brandon_text_regular"
+                app:layout_constraintLeft_toRightOf="@+id/tv_booking_title" />
+
+            <View
+                android:id="@+id/view_top"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/dimen_1"
+                android:layout_marginTop="@dimen/dimen_5"
+                android:background="@color/color_light_grey"
+                app:layout_constraintTop_toBottomOf="@+id/tv_booking_title" />
+
+
+            <LinearLayout
+                android:id="@+id/layout_booking_info"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/dimen_10"
+                android:layout_marginTop="@dimen/dimen_5"
+                android:orientation="vertical"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toLeftOf="@+id/iv_booking_logo"
+                app:layout_constraintTop_toBottomOf="@+id/view_top">
+
+                <TextView
+                    android:id="@+id/tv_booking_detail"
+                    style="@style/grey_14"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="@dimen/dimen_5"
+                    android:fontFamily="@font/brandon_text_bold"
+                    tools:text="@string/str_booking_information_detail" />
+
+
+                <TextView
+                    android:id="@+id/tv_booking_datetime"
+                    style="@style/grey_14"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="@dimen/dimen_5"
+                    android:fontFamily="@font/brandon_text_bold"
+                    tools:text="July 7th at 9.00 AM" />
+
+
+                <TextView
+                    android:id="@+id/tv_pickup_title"
+                    style="@style/grey_light_14"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/dimen_10"
+                    android:fontFamily="@font/brandon_text_regular"
+                    android:text="@string/str_pickup_details_title" />
+
+            </LinearLayout>
+
+
+            <ImageView
+                android:id="@+id/iv_booking_logo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingBottom="@dimen/dimen_5"
+                android:paddingTop="@dimen/dimen_5"
+                android:src="@drawable/ic_airport_logo"
+                app:layout_constraintBottom_toBottomOf="@id/layout_booking_info"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintRight_toRightOf="@+id/layout_booking_info"
+                app:layout_constraintTop_toTopOf="@+id/layout_booking_info" />
+
+
+            <View
+                android:id="@+id/view_middle"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/dimen_1"
+                android:layout_marginBottom="@dimen/dimen_5"
+                android:layout_marginTop="@dimen/dimen_5"
+                android:background="@color/color_light_grey"
+                app:layout_constraintTop_toBottomOf="@+id/layout_booking_info" />
+
+
+            <!--<LinearLayout-->
+            <!--android:id="@+id/layout_pickup_info"-->
+            <!--android:layout_width="0dp"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_marginTop="@dimen/dimen_5"-->
+            <!--android:orientation="vertical"-->
+            <!--app:layout_constraintEnd_toStartOf="@+id/iv_booking_logo"-->
+            <!--app:layout_constraintLeft_toLeftOf="parent"-->
+            <!--app:layout_constraintStart_toStartOf="parent"-->
+            <!--app:layout_constraintTop_toBottomOf="@+id/view_middle"-->
+            <!---->
+            <!--&gt;-->
+
+
+            <RelativeLayout
+                android:id="@+id/layout_pickup_info"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/view_middle">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="@dimen/dimen_5"
+                    android:layout_marginTop="@dimen/dimen_5"
+                    android:layout_toLeftOf="@+id/iv_pickup_logo"
+                    android:orientation="vertical">
+
+
+                    <TextView
+                        android:id="@+id/tv_pickup_detail"
+                        style="@style/grey_14"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="@dimen/dimen_5"
+                        android:fontFamily="@font/brandon_text_bold"
+                        tools:text="@string/str_pickup_detail" />
+
+
+                    <TextView
+                        android:id="@+id/tv_bus_number"
+                        style="@style/grey_light_14"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/dimen_10"
+                        android:fontFamily="@font/brandon_text_regular"
+                        tools:text="@string/str_bus_number" />
+                </LinearLayout>
+
+
+                <ImageView
+                    android:id="@+id/iv_pickup_logo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/ic_qrcode"
+
+                    />
+            </RelativeLayout>
+
+
+            <!--<ImageView-->
+            <!--android:id="@+id/iv_pickup_logo"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:paddingBottom="@dimen/dimen_5"-->
+            <!--android:src="@drawable/ic_qrcode"-->
+            <!--app:layout_constraintBottom_toBottomOf="@id/layout_pickup_info"-->
+            <!--app:layout_constraintEnd_toEndOf="parent"-->
+            <!--app:layout_constraintStart_toEndOf="@+id/layout_pickup_info"-->
+            <!--app:layout_constraintTop_toTopOf="@id/layout_pickup_info" />-->
+
+
+            <View
+                android:id="@+id/view_bottom"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/dimen_1"
+                android:layout_marginTop="@dimen/dimen_5"
+                android:background="@color/color_light_grey"
+                app:layout_constraintTop_toBottomOf="@+id/layout_pickup_info" />
+
+
+            <LinearLayout
+                android:id="@+id/layout_bus_status"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/dimen_10"
+                android:orientation="vertical"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toLeftOf="@+id/iv_booking_logo"
+                app:layout_constraintTop_toBottomOf="@+id/view_bottom">
+
+
+                <TextView
+                    android:id="@+id/tv_bus_status"
+                    style="@style/primary_dark_20"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/brandon_text_bold"
+                    tools:text="@string/msg_bus_started" />
+
+
+                <TextView
+                    android:id="@+id/tv_add_another_pick"
+                    style="@style/primary_dark_18"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/dimen_5"
+                    android:fontFamily="@font/brandon_text_regular"
+                    android:onClick="@{HomeChildFragment::onButtonClick}"
+                    android:text="@string/str_add_another_pickup" />
+            </LinearLayout>
+
+
+            <ImageView
+                android:id="@+id/iv_previous"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="@{HomeChildFragment::onButtonClick}"
+                android:padding="@dimen/dimen_5"
+                android:src="@drawable/ic_chevron_previous_primary_24dp"
+                android:visibility="gone"
+                app:layout_constraintBottom_toBottomOf="@id/layout_bus_status"
+                app:layout_constraintRight_toRightOf="@+id/layout_bus_status"
+                app:layout_constraintTop_toTopOf="@+id/layout_bus_status" />
+
+            <ImageView
+                android:id="@+id/iv_bus_logo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingBottom="@dimen/dimen_5"
+                android:paddingTop="@dimen/dimen_5"
+                android:src="@drawable/ic_bus"
+                app:layout_constraintBottom_toBottomOf="@id/layout_bus_status"
+                app:layout_constraintLeft_toRightOf="@+id/iv_previous"
+                app:layout_constraintRight_toLeftOf="@+id/iv_next"
+                app:layout_constraintTop_toTopOf="@+id/layout_bus_status" />
+
+
+            <ImageView
+                android:id="@+id/iv_next"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="@{HomeChildFragment::onButtonClick}"
+                android:padding="@dimen/dimen_5"
+                android:src="@drawable/ic_navigate_next_primary_24dp"
+                android:visibility="gone"
+                app:layout_constraintBottom_toBottomOf="@id/iv_bus_logo"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintLeft_toLeftOf="@+id/iv_bus_logo"
+                app:layout_constraintRight_toRightOf="@+id/iv_bus_logo"
+                app:layout_constraintStart_toEndOf="@+id/iv_bus_logo"
+                app:layout_constraintTop_toTopOf="@+id/iv_bus_logo" />
+
+
+            <!--<ImageView-->
+            <!--android:id="@+id/iv_bus_logo"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:paddingBottom="@dimen/dimen_5"-->
+            <!--android:paddingTop="@dimen/dimen_5"-->
+            <!--android:src="@drawable/ic_bus"-->
+            <!--app:layout_constraintBottom_toBottomOf="@id/layout_bus_status"-->
+            <!--app:layout_constraintEnd_toEndOf="parent"-->
+            <!--app:layout_constraintLeft_toRightOf="@+id/layout_bus_status"-->
+            <!--app:layout_constraintRight_toLeftOf="@+id/layout_bus_status"-->
+            <!--app:layout_constraintTop_toTopOf="@+id/layout_bus_status" />-->
+
+
+            <RelativeLayout
+                android:id="@+id/viewPagerIndicator"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dimen_5"
+                android:padding="@dimen/dimen_10"
+                app:layout_constraintBottom_toBottomOf="@id/layout_bus_status"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/iv_bus_logo">
+
+                <LinearLayout
+                    android:id="@+id/viewPagerCountDots"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginStart="@dimen/dimen_40"
+                    android:orientation="horizontal" />
+            </RelativeLayout>
+
+        </android.support.constraint.ConstraintLayout>
+
+        <fragment
+            android:id="@+id/map"
+            android:name="com.google.android.gms.maps.SupportMapFragment"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/constraint_top"
+            app:layout_constraintVertical_weight="5"
+            tools:context=".views.ui.activities.MapsActivity" />
+
+        <include layout="@layout/include_dark_progress_wait" />
+
+    </android.support.constraint.ConstraintLayout>
+</layout>

@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+    <data>
+
+        <variable
+            name="NoPickUpFragment"
+            type="com.nimius.smartbus.views.ui.fragments.NoPickUpFragment" />
+
+    </data>
+
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@android:color/white"
+        android:padding="@dimen/dimen_20">
+
+        <TextView
+            android:id="@+id/tv_no_pick_title"
+            style="@style/grey_40"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dimen_20"
+            android:fontFamily="@font/brandon_text_bold"
+            android:gravity="center"
+            android:text="@string/str_no_pickup"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+
+        <TextView
+            android:id="@+id/tv_no_pick_detail"
+            style="@style/grey_18"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dimen_20"
+            android:fontFamily="@font/brandon_text_bold"
+            android:text="@string/msg_no_pickup_detail"
+            app:layout_constraintTop_toBottomOf="@+id/tv_no_pick_title" />
+
+        <TextView
+            android:id="@+id/tv_add_another_pick"
+            style="@style/white_18"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dimen_20"
+            android:background="@drawable/shape_button_green_bg"
+            android:fontFamily="@font/brandon_text_bold"
+            android:gravity="center"
+            android:onClick="@{NoPickUpFragment::onButtonClick}"
+            android:padding="@dimen/dimen_10"
+            android:text="@string/str_add_another_pickup"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tv_no_pick_detail" />
+
+    </android.support.constraint.ConstraintLayout>
+</layout>

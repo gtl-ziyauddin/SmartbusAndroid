@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <com.nimius.smartbus.views.ui.customeView.CustomViewPager
+            android:id="@+id/pager_home"
+            android:layout_width="match_parent"
+            android:layout_height="0dp">
+
+        </com.nimius.smartbus.views.ui.customeView.CustomViewPager>
+
+        <!--<RelativeLayout-->
+            <!--android:id="@+id/viewPagerIndicator"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:gravity="right"-->
+            <!--android:padding="@dimen/dimen_10"-->
+            <!--app:layout_constraintTop_toTopOf="@+id/guideline">-->
+
+            <!--<LinearLayout-->
+                <!--android:id="@+id/viewPagerCountDots"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_centerVertical="true"-->
+                <!--android:layout_marginStart="@dimen/dimen_40"-->
+                <!--android:orientation="horizontal" />-->
+        <!--</RelativeLayout>-->
+
+
+        <!--<android.support.constraint.Guideline-->
+            <!--android:id="@+id/guideline"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:orientation="horizontal"-->
+            <!--app:layout_constraintGuide_percent="0.53" />-->
+    </android.support.constraint.ConstraintLayout>
+</layout>
